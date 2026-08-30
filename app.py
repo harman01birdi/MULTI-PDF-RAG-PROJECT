@@ -202,6 +202,6 @@ if question := st.chat_input("Ask a question about your PDF..."):
 # --- Footer ---
 st.markdown("""
 <div class="footer">
-    AI RAG Assistant • Built by Muhammad Shayan Khurshid
+    AI RAG Assistant • Built by Harmanpreet Birdi
 </div>
 """, unsafe_allow_html=True)

@@ -1,7 +1,8 @@
-﻿.env
+.env
 __pycache__/
 *.pyc
 chroma_db/
 .ipynb_checkpoints/
 venv/
 .venv/
+*.pdf
