@@ -14,6 +14,7 @@ An AI-powered document assistant that lets you upload PDFs and ask questions gro
 ## 🛠️ Tech Stack
 
 - **Frontend/UI:** Streamlit
+- **Backend/API:** FastAPI
 - **LLM:** Google Gemini (via `langchain-google-genai`)
 - **Embeddings:** HuggingFace Sentence Transformers
 - **Vector Store:** ChromaDB
@@ -39,10 +40,21 @@ An AI-powered document assistant that lets you upload PDFs and ask questions gro
    GOOGLE_API_KEY=your_api_key_here
    ```
 
-4. Run the app
+4. Run the backend API
    ```bash
-   streamlit run app.py
+   cd backend
+   uvicorn app:app --reload --port 8000
    ```
+
+5. In a second terminal, run the frontend
+   ```bash
+   cd frontend
+   streamlit run main.py
+   ```
+
+The UI talks to `http://127.0.0.1:8000`. Check the RAG pipeline first at `http://127.0.0.1:8000/docs` (`/upload` then `/ask`).
+
+The original single-file app is still in `MAIN-app.py`.
 
 ## 📸 How It Works
 
@@ -57,4 +69,4 @@ This project is open source and available for learning purposes.
 
 ---
 
-Built by **Muhammad Shayan Khurshid**
+Built by **Harmanpreet Birdi**

@@ -2,7 +2,12 @@
 __pycache__/
 *.pyc
 chroma_db/
+uploads/
 .ipynb_checkpoints/
 venv/
 .venv/
 *.pdf
+body.json
+*.zip
+backend/uploads/
+backend/chroma_db/

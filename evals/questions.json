@@ -1,0 +1,173 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the candidate's full name?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "expected_pages": [1],
+    "must_contain": ["Harmanpreet Birdi"],
+    "answerable": true
+  },
+  {
+    "id": "q2",
+    "question": "What degree is the candidate pursuing?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["B.Tech", "CSE"],
+    "answerable": true
+  },
+  {
+    "id": "q3",
+    "question": "Which university is the candidate attending?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["CT University"],
+    "answerable": true
+  },
+  {
+    "id": "q4",
+    "question": "What is the candidate's expected graduation year?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["2027"],
+    "answerable": true
+  },
+  {
+    "id": "q5",
+    "question": "What CGPA has the candidate reported?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["8.3"],
+    "answerable": true
+  },
+  {
+    "id": "q6",
+    "question": "Which programming languages does the candidate know?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["Python"],
+    "answerable": true
+  },
+  {
+    "id": "q7",
+    "question": "Which machine learning frameworks or libraries has the candidate used?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["Scikit-learn"],
+    "answerable": true
+  },
+  {
+    "id": "q8",
+    "question": "Where did the candidate complete the AI/ML internship in 2025?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["DigiMantra Labs"],
+    "answerable": true
+  },
+  {
+    "id": "q9",
+    "question": "What machine learning models were used for the lung disease prediction project?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["XGBoost", "Random Forest"],
+    "answerable": true
+  },
+  {
+    "id": "q10",
+    "question": "Which techniques were used to prepare or improve the lung disease prediction dataset?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["feature engineering"],
+    "answerable": true
+  },
+  {
+    "id": "q11",
+    "question": "Which organization is listed for the candidate's 2026 AI/ML internship?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["YHILLS"],
+    "answerable": true
+  },
+  {
+    "id": "q12",
+    "question": "What type of application did the candidate build using retrieval-augmented generation?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["PDF"],
+    "answerable": true
+  },
+  {
+    "id": "q13",
+    "question": "Which framework was used to build the RAG application?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["LangChain"],
+    "answerable": true
+  },
+  {
+    "id": "q14",
+    "question": "Which vector database was used in the PDF RAG project?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["ChromaDB"],
+    "answerable": true
+  },
+  {
+    "id": "q15",
+    "question": "Which language model provider was used for the RAG application?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["Gemini"],
+    "answerable": true
+  },
+  {
+    "id": "q16",
+    "question": "What framework was used to build the API for the candidate's PDF RAG Assistant?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["FastAPI"],
+    "answerable": true
+  },
+  {
+    "id": "q17",
+    "question": "Which project involved recommending similar movies?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["Movie Recommendation System"],
+    "answerable": true
+  },
+  {
+    "id": "q18",
+    "question": "Summarize the candidate's internships, including the organizations, work performed, and technologies used.",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["AI/ML"],
+    "answerable": true
+  },
+  {
+    "id": "q19",
+    "question": "Summarize the candidate's PDF RAG Assistant project and explain its main technologies.",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["RAG", "FastAPI"],
+    "answerable": true
+  },
+  {
+    "id": "q20",
+    "question": "What technical skills related to data analysis and machine learning are listed on the resume?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "must_contain": ["Python", "Pandas"],
+    "answerable": true
+  },
+  {
+    "id": "q21",
+    "question": "What is the candidate's blood group?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "answerable": false
+  },
+  {
+    "id": "q22",
+    "question": "What is the candidate's passport number?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "answerable": false
+  },
+  {
+    "id": "q23",
+    "question": "What is the candidate's home address?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "answerable": false
+  },
+  {
+    "id": "q24",
+    "question": "What is the candidate's date of birth?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "answerable": false
+  },
+  {
+    "id": "q25",
+    "question": "What was the candidate's exact score in the GATE examination?",
+    "doc_file": "Harmanpreet_Birdi_Resume.pdf",
+    "answerable": false
+  }
+]

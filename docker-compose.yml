@@ -1,0 +1,59 @@
+x-backend: &backend
+  build: ./backend
+  image: rag-backend:latest
+  env_file: .env
+  environment:
+    UPLOAD_DIR: /data/uploads
+    CHROMA_HOST: chroma
+    CHROMA_PORT: "8000"
+    REDIS_URL: redis://redis:6379/0
+  volumes:
+    - app_data:/data
+  restart: unless-stopped
+  depends_on:
+    redis:
+      condition: service_healthy
+    chroma:
+      condition: service_started
+
+services:
+  api:
+    <<: *backend
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 90s
+
+  worker:
+    <<: *backend
+    command: celery -A workers.celery_app:celery_app worker --loglevel=info --concurrency=1
+
+  redis:
+    image: redis:7
+    command: ["redis-server", "--appendonly", "yes"]   # persist the queue to disk
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+  chroma:
+    image: chromadb/chroma:1.5.9
+    environment:
+      IS_PERSISTENT: "TRUE"
+      ANONYMIZED_TELEMETRY: "FALSE"
+    volumes:
+      - chroma_data:/data
+    restart: unless-stopped
+
+volumes:
+  app_data:
+  chroma_data:
+  redis_data:

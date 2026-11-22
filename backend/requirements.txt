@@ -1,0 +1,17 @@
+python-dotenv
+fastapi
+uvicorn
+python-multipart
+langchain-classic
+langchain-community
+langchain-text-splitters
+langchain-chroma
+langchain-google-genai
+sentence-transformers
+pypdf
+langchain-huggingface
+pydantic
+chromadb
+langchain-core
+celery[redis]
+redis

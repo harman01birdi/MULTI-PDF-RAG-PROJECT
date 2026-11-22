@@ -1,5 +1,9 @@
 streamlit
 python-dotenv
+requests
+fastapi
+uvicorn
+python-multipart
 langchain-classic
 langchain-community
 langchain-text-splitters
